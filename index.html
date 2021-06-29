@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/c4ab58bc29.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Madelyn Torff</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="menu">
+                <a class="menu__link" href="#about-me">Sobre Mi</a>
+                <a class="menu__link" href="#galery">Galeria</a>
+                <a class="menu__link" href="#contact">Contacto</a>
+            </nav>
+
+            <div class="header-content">
+                <h1 class="title">Hola, mi nombre es Madelyn Torff</h1>
+                <p class="info">Soy fotógrafa profesional con mas de 5 años de experiencia, si sigues bajando podras ver mis proyectos 
+                mas destacados y saber un poco mas de mi...</p>
+                <div class="buttons">
+                    <button class="btn-galery">Galeria</button>
+                    <button class="btn-linkedin">LinkedIn</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row galery-grid" id="galery">
+                <h1 class="title">Galeria</h1>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/1.jpg" class="responsive-img materialboxed" alt="">
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/2.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/3.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/4.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/5.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/6.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/7.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/8.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/9.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/10.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/11.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+                <div class="col s12 m4 l3">
+                    <div class="material-placeholder">
+                        <img src="./img/12.jpg" class="responsive-img materialboxed" alt="" >
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about-me" id="about-me">
+                <div class="about-me__text">
+                    <h1 class="title">Sobre Mi</h1>
+                    <p class="info">Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque 
+                        auctor dis ipsum. Pretium cras amet odio amet eleifend 
+                        id sed cras sed. Aliquet risus posuere aliquet 
+                        imperdiet sit.</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/about-me.png" alt="Photo Madelyn Torff">
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <h1 class="title">Contacto</h1>
+
+                <form action="#" class="contact__form">
+
+                    <label for="name" class="contact__label">Nombre</label>
+                    <input type="text" name="name" id="name" class="contact__input" required>
+					
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" name="email" id="email" class="contact__input" required>
+					
+                    <label for="message" class="contact__label">Mensaje</label>
+                    <textarea name="message" id="message"></textarea>
+
+					<input class="btn" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" class="instagram">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="instagram">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">Madelyn Torff 2021.</p>
+            <!-- <div class="image-footer"></div> -->
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

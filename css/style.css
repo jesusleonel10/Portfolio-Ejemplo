@@ -1,0 +1,376 @@
+:root {
+    --color-yellow: #FFC637;
+    --color-title: #25282B;
+    --color-body: #828282;
+    --font-nunito: 'Nunito', sans-serif;
+    --font-play: 'Playfair Display', serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+*, *,::after, *::before {box-sizing: border-box;}
+
+.container {
+    width: 80%;
+}
+
+/* Header */
+
+header {
+    background: url('../img/woman-background-header.png') no-repeat;
+    background-position: top;
+}
+
+.menu {
+    background: none;
+    box-shadow: none;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    color: #000;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    position: relative;
+}
+
+.menu__link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    display: block;
+    /* margin-top: .6rem; */
+    background: var(--color-title);
+    transform: scaleX(0);
+    transition: .25s linear;
+
+}
+
+.menu__link:hover::after {
+    transform: scaleX(.7);
+
+}
+
+.header-content {
+    margin-top: 20rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-play);
+}
+
+.info {
+    text-align: center;
+    font-family: var(--font-nunito);
+    font-weight: 400;
+    color: var(--color-body);
+    line-height: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    padding: 8px 24px;
+    border-radius: 8px;
+    width: 112px;
+}
+
+.btn-galery {
+    background: var(--color-yellow);
+    border: none;
+}
+
+.btn-galery:focus {
+    background: var(--color-yellow);
+
+}
+
+.btn-galery:hover {
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.btn-linkedin {
+    background: none;
+    border: 2px solid #000;
+    transition: .3s ease;
+}
+
+.btn-linkedin:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.btn-linkedin:focus {
+    background: #000;
+
+}
+/* Galery */
+
+.galery-grid {
+    margin: 10rem 0;
+}
+
+.galery-grid .title {
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.galery-grid .title::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100%;
+    height: 5px;
+    display: block;
+    transform: scaleX(.3);
+    margin-top: .6rem;
+    background: var(--color-yellow);
+}
+
+.galery-grid img {
+    /* box-shadow: 0 8px 10px -4px rgba(0, 0, 0, .6); */
+    border-radius: 15px;
+}
+
+.galery-grid .col {
+    margin-bottom: 2rem;
+}
+
+/* About Me */
+
+.about-me {
+    margin: 10rem 0;
+}
+
+.about-me .title::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100%;
+    height: 5px;
+    display: block;
+    transform: scaleX(.3);
+    margin-top: .6rem;
+    background: var(--color-yellow);
+}
+
+.photo {
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.photo img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* Contact */
+
+.contact .title::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100%;
+    height: 5px;
+    display: block;
+    transform: scaleX(.3);
+    margin-top: .6rem;
+    background: var(--color-yellow);
+}
+
+.contact__form {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label {
+    font-family: var(--font-nunito);
+    font-weight: 600;
+    color: var(--color-title);
+    display: block;
+    margin-bottom: .7rem;
+
+}
+
+.contact__form input[type=text],
+.contact__form input[type=email] {
+    border: 2px solid #D1D2D4;
+    border-radius: 6px;
+    height: 32px;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+
+.contact__form textarea {
+    border: 2px solid #D1D2D4;
+    border-radius: 6px;
+    height: 200px;
+    margin-bottom: 1rem;
+    resize:none;
+}
+
+.contact__form input[type=text]:focus,
+.contact__form input[type=email]:focus,
+.contact__form textarea:focus {
+    border: 2px solid var(--color-body) !important;
+}
+
+label.active {
+    color: var(--color-title);
+}
+
+.btn {
+    align-self: center;
+    background: var(--color-yellow);
+    border: none;
+    box-shadow: none;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    border-radius: 8px;
+    color: #000;
+    width: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-yellow);
+    outline: 2px solid #000;
+    box-shadow: none;
+}
+
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    box-shadow: none;
+}
+
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+    color: var(--color-title);
+}
+
+
+footer {
+    background: url('../img/footer-mobile.png') no-repeat bottom;
+    height: 80vh;
+}
+
+.social-media {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media i {
+    font-size: 4rem;
+    color: var(--color-title);
+}
+
+.copyright {
+    text-align: center;
+    margin: 0;
+    color: var(--color-body);
+}
+
+/* Mediaqueries */
+
+@media screen and (min-width: 470px) {
+    header {
+        background: url('../img/woman-background-header-desktop.png') no-repeat;
+        background-position: top right;
+        background-size: 95%;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .header-content {
+        margin-top: 28rem;
+    }
+
+    footer {
+        background: url('../img/footer-desktop.png') no-repeat bottom;
+    }
+}
+
+@media screen and (min-width: 620px) {
+
+    header {
+        background-size: 45%;
+        height: 100vh;
+    }
+
+    .header-content {
+        margin-top: 0;
+        margin-right: 35rem;
+    }
+
+    .header-content .title,
+    .header-content .info {
+        text-align: left;
+    }
+
+    .menu {
+        justify-content: right;
+        gap: 2rem;
+    }
+
+    .buttons {
+        justify-content: left;
+    }
+
+    .galery-grid {
+        margin: 0;
+    }
+
+    .about-me {
+        display: flex;
+        gap: 15rem;
+    }
+
+    .about-me .title::after {
+        display: none;
+    }
+
+    .about-me .title,
+    .about-me .info {
+        text-align: left;
+    }
+
+    .contact,
+    .social-media {
+        padding: 2rem 20rem;
+    }
+
+    footer {
+        height: 60vh;
+    }
+
+
+
+    
+} 
